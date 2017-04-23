@@ -1,0 +1,35 @@
+{
+  "common_variable": {
+    "driver_name": "cgs_driver",
+    "driver_module": ["cgs_driver.driver_handler", "cgs_driverDriverHandler"],
+    "connection_type": "ssh",
+    "connection_port": 2024,
+    "device_prompt": "#",
+    "server_timeout": 10,
+    "runtime_configuration": "cgs_driver_runtime_configuration.json"
+  },
+
+  "cli_variable": {
+    "ssh": ["common.cli.ssh_session", "SSHSession"],
+    "telnet": ["common.cli.telnet_session", "TelnetSession"],
+    "tcp": ["common.cli.tcp_session", "TCPSession"]
+  },
+
+  "driver_variable": {
+    "resource_name": [
+      "Switch {0}",
+      "Blade {0}",
+      "Port {0}"
+    ],
+    "resource_family_name": [
+      "None",
+      "None Blade",
+      "None Port"
+    ],
+    "resource_model_name": [
+      "CgsDriver",
+      "CgsDriver Blade",
+      "CgsDriver Port"
+    ]
+  }
+}
