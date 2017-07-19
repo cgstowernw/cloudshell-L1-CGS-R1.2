@@ -120,7 +120,7 @@ class cgs_driverDriverHandler(DriverHandlerBase):
 
         else:
 		# breakout
-		if len(quali_port) == 4
+		if len(quali_port) == 4:
                 	cgs_port = "{}/{}".format(quali_port[2], quali_port[3])
 		else:
 			# error
